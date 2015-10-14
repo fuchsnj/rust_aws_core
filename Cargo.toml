@@ -1,4 +1,4 @@
 [package]
-name = "aws-core"
+name = "aws_core"
 version = "0.1.0"
 authors = ["Nathan Fuchs <fuchsnj@gmail.com>"]
