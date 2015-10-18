@@ -38,14 +38,15 @@ impl Credentials{
     }
 }
 
+/*
 #[derive(Clone, Debug)]
 pub struct AWSCredentials {
     key: String,
     secret: String,
     token: Option<String>,
     expires_at: DateTime<UTC>
-}
-
+}*/
+/*
 impl AWSCredentials {
     pub fn new<K, S>(key:K, secret:S, token:Option<String>, expires_at:DateTime<UTC>) -> AWSCredentials where K:Into<String>, S:Into<String> {
         AWSCredentials {
@@ -81,8 +82,8 @@ impl AWSCredentials {
         }
         return false;
     }
-}
-
+}*/
+/*
 pub trait AWSCredentialsProvider {
 	fn get_credentials(&mut self) -> Result<&AWSCredentials, AWSError>;
 }
@@ -418,3 +419,4 @@ impl DefaultAWSCredentialsProviderChain {
 fn in_ten_minutes() -> DateTime<UTC> {
     UTC::now() + Duration::seconds(600)
 }
+*/

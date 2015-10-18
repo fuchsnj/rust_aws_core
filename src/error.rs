@@ -3,7 +3,13 @@ use xmlutil::XmlParseError;
 #[derive(Debug)]
 pub enum AWSError{
 	XmlParse(String),
-	NoCredentials
+	NoCredentials,
+	ProtocolError(String)
+}
+impl AWSError{
+	pub fn protocol_error(msg: &str) -> AWSError{
+		AWSError::ProtocolError(msg.to_owned())
+	}
 }
 
 impl From<XmlParseError> for AWSError {

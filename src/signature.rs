@@ -1,12 +1,12 @@
 extern crate regex;
-use credentials::{AWSCredentials, Credentials};
+use credentials::Credentials;
 use hyper::client::Response;
 use hyper::status::StatusCode;
 use openssl::crypto::hash::Type::SHA256;
 use openssl::crypto::hash::hash;
 use openssl::crypto::hmac::hmac;
 use params::Params;
-use serialize::hex::ToHex;
+use rustc_serialize::hex::ToHex;
 use std::ascii::AsciiExt;
 use std::collections::BTreeMap;
 use std::collections::btree_map::Entry;

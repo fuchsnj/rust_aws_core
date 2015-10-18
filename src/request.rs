@@ -19,7 +19,7 @@ pub fn send_request(signed_request: &SignedRequest) -> Response {
 	//println!("sending headers: {:#?}", signed_request.get_headers());
     for h in signed_request.get_headers().iter() {
         hyper_headers.set_raw(h.0.to_owned(), h.1.to_owned());
-		println!("sending header: {:?}", h.0);
+		//println!("sending header: {:?}", h.0);
     }
 
     let mut final_uri = format!("https://{}{}", signed_request.get_hostname(), signed_request.get_canonical_uri());
