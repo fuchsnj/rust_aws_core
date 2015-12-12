@@ -18,5 +18,6 @@ pub use credentials::Credentials;
 pub use signature::SignedRequest;
 pub use regions::Region;
 pub use error::AWSError;
+pub use hyper::status::StatusCode;
 
 pub type AWSResult<T> = Result<T, AWSError>;
